@@ -68,7 +68,7 @@ Functions of same type could be combined between colons with "-" symbol.
 
 Processing goes from left to right of string.
 
-Variables _x1, y1, x2, y2, x3, y3, a1, a2, a3, b1, b2, b3, c1, c2, c3_ are allowed.
+Variables _x1, y1, x2, y2, x3, y3, a1, a2, a3, b1, b2, b3, c1, c2, c3, r1, r2, r3_ are allowed. R-variables are randoms.
 
 Example:
 ```
