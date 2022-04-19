@@ -45,7 +45,7 @@ The word at the top of the window is the name of the current filter. Clicking on
 
 **✓** - apply the selected settings and restart the program.
 
-**✖** — exit from the menu while saving the previous settings.
+**X** - exit from the menu while saving the previous settings.
 
 ## Filters building.
 
@@ -62,7 +62,7 @@ Every filter should have the special structure with 5 necessary colons:
 5. BL, blending functions
 6. TX, output image functions
 
-'#' - create the next shader with same 1:2:3:4:5:6 structure
+'#' - create the next shader (optional)
 
 Functions of same type could be combined between colons with "-" symbol.
 
