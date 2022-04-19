@@ -27,9 +27,9 @@ The word at the top of the window is the name of the current filter. Clicking on
 
 **↑ / →** - vertical or horizontal image orientation for saving.
 
-**1, 2, 3**  - finely tune of 6 variables: _X1, Y1, X2, Y2, X3, Y3_.
+**1, 2, 3**  - finely tune of 6 variables: _x1, y1, x2, y2, x3, y3_.
 
-**A, B, C** - randomly set of 9 variables: _A1, A2, A3, B1, B2, B3, C1, C2, C3_.
+**A, B, C** - randomly set of 9 variables: _a1, a2, a3, b1, b2, b3, c1, c2, c3_.
 
 ## Settings menu.
 
@@ -46,3 +46,33 @@ The word at the top of the window is the name of the current filter. Clicking on
 **✓** - apply the selected settings and restart the program.
 
 **✖** — exit from the menu while saving the previous settings.
+
+## Filters building.
+
+Every filter should have the special structure with 5 necessarily colons:
+
+**FilterName @ TX : UV : CL : AL : BL : TX**
+
+@ - create the first shader
+
+1. TX, input image functions
+2. UV, coordinate system functions
+3. CL, color functions
+4. AL, aplha channel functions
+5. BL, blending functions
+6. TX, output image functions
+
+'#' - create the next shader with same 1:2:3:4:5:6 structure
+
+Functions of same type could be combined between colons with "-" symbol.
+
+List of all available functions are located in "Functions" menu.
+
+Example:
+```
+Lufibi_Blue
+@imb::rpi(b1,b2)-neg::dfr(a1):imi
+#imo:dpc(0.9):::nml(0.65):imt
+#::::bi2(0.5):imi
+```
+
