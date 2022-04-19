@@ -41,7 +41,7 @@ The word at the top of the window is the name of the current filter. Clicking on
 
 **FILE TYPE** - jpg or png file type.
 
-**SAVING DELAY** - used to progressively save a series of photos
+**SAVING DELAY** - used to progressively save a series of photos.
 
 **✓** - apply the selected settings and restart the program.
 
@@ -49,7 +49,7 @@ The word at the top of the window is the name of the current filter. Clicking on
 
 ## Filters building.
 
-Every filter should have the special structure with 5 necessarily colons:
+Every filter should have the special structure with 5 necessary colons:
 
 **FilterName @ TX : UV : CL : AL : BL : TX**
 
@@ -66,13 +66,24 @@ Every filter should have the special structure with 5 necessarily colons:
 
 Functions of same type could be combined between colons with "-" symbol.
 
-List of all available functions are located in "Functions" menu.
+Processing goes from left to right of string.
+
+Variables _x1, y1, x2, y2, x3, y3, a1, a2, a3, b1, b2, b3, c1, c2, c3_ are allowed.
 
 Example:
 ```
-Lufibi_Blue
-@imb::rpi(b1,b2)-neg::dfr(a1):imi
-#imo:dpc(0.9):::nml(0.65):imt
-#::::bi2(0.5):imi
+Lufibi_Blue                                       <- filter name
+@imb::rpi(b1,b2)-neg::dfr(a1):imi                 <- first shader
+#imo:dpc(0.9):::nml(0.65):imt                     <- second shader
+#::::bi2(0.5):imi                                 <- third shader
 ```
 
+**Functions** - list of all available functions and arguments.
+
+**Save / Load** - memory and files operations.
+
+**New** - create new filter.
+
+**Reset Variables** - set all A, B, C, X, Y variables to their default values.
+
+**Convert Variables** - replace all A, B, C, X, Y variables in code with their actual values.
