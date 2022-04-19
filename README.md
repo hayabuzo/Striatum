@@ -1,4 +1,4 @@
-# Striatum
+# Striatum (p5js/webgl)
 Script-based realtime shader processor for camera.
 
 Striatum is the next version of [Disaurde](https://github.com/hayabuzo/Disaurde), it allows to create complex and customizable filters with improved performance.
