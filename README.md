@@ -1,5 +1,5 @@
 # Striatum (p5js/webgl)
-Script-based realtime shader processor for camera.
+Script-based real time shader processor for camera.
 
 ![image](https://user-images.githubusercontent.com/38255514/163958199-6e52590d-26c0-447d-87a9-89898f1ed267.png)
 
