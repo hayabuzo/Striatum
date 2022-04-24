@@ -9,7 +9,7 @@ Striatum is the next version of [Disaurde](https://github.com/hayabuzo/Disaurde)
 
 🏓 [Run at OpenProcessing](https://openprocessing.org/sketch/1447131)
 
-🖼 [View Image Gallery](https://www.behance.net/disaurde)
+🖼 [View Image Gallery](https://www.behance.net/search/projects?tools=1668117583)
 
 ## Shooting mode.
 
