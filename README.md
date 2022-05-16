@@ -39,7 +39,7 @@ The word at the top of the window is the name of the current filter. Clicking on
 
 **QUALITY** - pixel density.
 
-**CAMERA TYPE** - the mail or frontal camera of the device.
+**CAMERA TYPE** - the main or frontal camera of the device.
 
 **FILE TYPE** - jpg or png file type.
 
