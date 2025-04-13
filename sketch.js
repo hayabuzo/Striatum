@@ -1837,7 +1837,7 @@ function settings_load(q) {
     //                                              default values
     quality      = loaded & set[00]>0        ? set[00] : 1.0   ;
     frontal      = loaded           ? boolean(set[01]) : false ;
-    vgamode      = loaded           ? boolean(set[02]) : false ;
+    vgamode      = loaded           ? boolean(set[02]) : true  ;
     file_type    = loaded & set[03]          ? set[03] : 'jpg' ; 
     pmd          = loaded & set[04]>=0       ? set[04] : 0     ; 
     filter       = loaded & set[05]!=null    ? set[05] : ':::::'; 
